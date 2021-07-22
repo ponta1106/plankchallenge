@@ -1,0 +1,15 @@
+body {
+  color: #fff;
+  background-color: darkslategray;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  outline: none;
+}
