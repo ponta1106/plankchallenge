@@ -1,19 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>PlankChallenge</title>
+  <title>腹筋力チェッカー</title>
 </head>
 <body>
   <div class="container">
-    <button id="start">タイマースタート</button>
-    <button id="stop">ストップ</button>
-    <button id="reset">リセット</button>
+    <h1>腹筋力チェッカー</h1>
+    <img src="plankman.png" alt="plankman" id="plankman">
+    <h2>あなたのプランク力を計測します</h2>
+    <p id="explanation">プランクの準備ができたら<br><span class="power">スタート</span>をタップ！</p>
+    <p id="explanation">限界がきたら<br><span class="power">もうだめ</span>をタップ！</p>
+    <button id="start">スタート</button>
+    <button id="stop">もうだめ</button>
     <p id="timer">00:00:000</p>
   </div>
+
+  <div class="modal">
+    <div class="wrapper">
+      <h1>腹筋力チェッカー</h1>
+      <h2 id="preCommentArea"></h2>
+      <h2 id="commentArea"></h2>
+      <img alt="resultImage" id="resultImage">
+      <h3>このアプリが気に入ったらシェアしてね</h3>
+      <a id="twitterLink" href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-size="large">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,15 +1,100 @@
+* {
+  /* outline: 2px solid red; */
+  box-sizing: border-box;
+}
+
 body {
-  color: #fff;
-  background-color: darkslategray;
+  color: #333;
+  background-color: #eee;
+  max-width: 380px;
 }
 
 .container {
-  width: 500px;
+  width: 90%;
   margin: 0 auto;
+  position: relative;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: -380px;
+  background: lightsalmon;
+  max-width: 380px;
+  height: 100vh;
+  transition: 1s;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#resultImage {
+  width: 90%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+}
+
+#twitter-widget-0 {
+  float: right;
+}
+
+h1 {
+  padding: 3px;
+  color: #fff;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 3px;
+  background: #333;
+}
+
+h2 {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#explanation {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+#plankman {
+  width: 100%;
 }
 
 button {
   border: none;
-  padding: 10px;
+  padding: 20px;
   outline: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 3px darkslategray;
+  background: steelblue;
+  width: 100%;
+}
+
+#stop {
+  display: none;
+}
+
+#timer {
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  background: #333;
+  border-radius: 3px;
+}
+
+.power {
+  margin: 3px;
+  padding: 3px;
+  color: #fff;
+  background: steelblue;
+  border-radius: 3px;
 }
